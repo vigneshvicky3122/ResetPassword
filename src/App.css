@@ -1,38 +1,271 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+i {
+  color: #262626;
+  cursor: pointer;
+}
+
+.signup-form {
+  background: #ffffff;
+  margin: auto;
+  margin-top: 25px;
+  width: 400px;
+  height: 100vh;
+  border: 0.1px solid #dbdbdb;
+}
+.sign-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin: 20px 50px;
+}
+.sign-brand-name {
+  justify-content: center;
+  letter-spacing: 2px;
+  color: #383838;
+  font-size: 3em;
+  font-family: "Norican", cursive !important;
+}
+.sign-review {
+  text-align: center;
+  color: #929292;
+  font-size: 18px;
+  font-weight: 500;
+}
+.form-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-control {
+  width: 100%;
+  line-height: 30px;
+  align-items: center;
+  background-color: #fafafa;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 2px;
+  padding-left: 10px;
+  outline: none;
+}
+.form-control::placeholder {
+  color: #929292;
+  font-size: 13px;
+  font-weight: normal;
+}
+#form-action {
+  position: absolute;
+  color: #ee2e3f;
+  margin-left: 130px;
+  margin-top: -25px;
+}
+.form-optional {
+  width: 100%;
+  background: none;
+  height: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-or {
+  margin: auto;
+  margin-top: -15px;
+  text-align: center;
+  width: 15%;
+  color: #929292;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.privacy-content {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #929292;
+}
+.signup-btn {
+  color: #ffff;
+  width: 100%;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #008cff;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.signup-login-container {
+  background: #ffffff;
+  width: 400px;
+  line-height: 50px;
+  margin: 15px auto;
+  border: 0.1px solid #dbdbdb;
+}
+.login-content {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #262626;
+}
+.facebook-login-btn {
+  color: #ffff;
+  width: 100%;
+  line-height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #008cff;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-login {
+  background: #ffffff;
+  width: 400px;
+  height: 80vh;
+  margin: 20px auto;
+  border: 0.1px solid #dbdbdb;
+}
+.login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: auto;
+}
+.facebook-login-tag {
+  color: #4267b2;
+  width: 100%;
+  line-height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.login-forgot-container {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.form-forgot {
+  background: #ffffff;
+  width: 400px;
+  height: 80vh;
+  text-align: center;
+  margin: 20px auto;
+  border: 0.1px solid #dbdbdb;
+}
+.forgot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 50px;
+}
+.forgot-query {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 500;
+}
+.forgot-signup-container {
+  color: #262626;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.forgot-login-content {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #262626;
+}
+.forgot-login-container {
+  width: 400px;
+  line-height: 50px;
+  margin: 20px auto;
+  background: #fafafa;
+  text-align: center;
+  align-items: center;
+  border: 0.1px solid #dbdbdb;
+}
+.post {
+  width: 300px;
+  height: 400px;
+  margin: 10% auto;
+}
+.container-one {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+}
+.inputs {
+  width: 100%;
+  height: 2em;
+}
+.nav {
+  width: 100%;
+  line-height: 4em;
+  background: #ffffff;
+  border-bottom: 0.1px solid #dbdbdb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-container {
+  display: flex;
+  margin: 0 50px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-secondary {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-brand {
+  color: #3895ff;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Pacifico", cursive;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #262626;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartValue {
+  color: #3895ff;
+}
+
+.navbar-brand-icon {
+  width: 30px;
+  height: auto;
+  background-color: aqua;
 }
